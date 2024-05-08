@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4898AC0F2BDFED5800434F7C /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4898AC0E2BDFED5700434F7C /* ToDoItem.swift */; };
+		4898AC112BE279E200434F7C /* FileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4898AC102BE279E100434F7C /* FileCache.swift */; };
 		48AAC4782BDA827B007D10C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AAC4772BDA827B007D10C5 /* AppDelegate.swift */; };
 		48AAC47A2BDA827B007D10C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AAC4792BDA827B007D10C5 /* SceneDelegate.swift */; };
 		48AAC47C2BDA827B007D10C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AAC47B2BDA827B007D10C5 /* ViewController.swift */; };
@@ -43,6 +45,11 @@
 		0C2F8752D8F3C4A1108938EA /* Pods_ToDoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		268CCB4DADDF6EC8FAAF2C88 /* Pods-ToDoListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListTests.debug.xcconfig"; path = "Target Support Files/Pods-ToDoListTests/Pods-ToDoListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2BADCCA65A185871313E5A02 /* Pods_ToDoListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4898AC0B2BDFB6E000434F7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		4898AC0C2BDFB77A00434F7C /* be-BY */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "be-BY"; path = "be-BY.lproj/Main.strings"; sourceTree = "<group>"; };
+		4898AC0D2BDFB77A00434F7C /* be-BY */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "be-BY"; path = "be-BY.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		4898AC0E2BDFED5700434F7C /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		4898AC102BE279E100434F7C /* FileCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCache.swift; sourceTree = "<group>"; };
 		48AAC4742BDA827B007D10C5 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AAC4772BDA827B007D10C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48AAC4792BDA827B007D10C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +140,8 @@
 				48AAC4802BDA827C007D10C5 /* Assets.xcassets */,
 				48AAC4822BDA827C007D10C5 /* LaunchScreen.storyboard */,
 				48AAC4852BDA827C007D10C5 /* Info.plist */,
+				4898AC0E2BDFED5700434F7C /* ToDoItem.swift */,
+				4898AC102BE279E100434F7C /* FileCache.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -257,6 +266,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"be-BY",
 			);
 			mainGroup = 48AAC46B2BDA827B007D10C5;
 			productRefGroup = 48AAC4752BDA827B007D10C5 /* Products */;
@@ -390,6 +400,8 @@
 			files = (
 				48AAC47C2BDA827B007D10C5 /* ViewController.swift in Sources */,
 				48AAC4782BDA827B007D10C5 /* AppDelegate.swift in Sources */,
+				4898AC0F2BDFED5800434F7C /* ToDoItem.swift in Sources */,
+				4898AC112BE279E200434F7C /* FileCache.swift in Sources */,
 				48AAC47A2BDA827B007D10C5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +443,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				48AAC47E2BDA827B007D10C5 /* Base */,
+				4898AC0B2BDFB6E000434F7C /* en */,
+				4898AC0C2BDFB77A00434F7C /* be-BY */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -439,6 +453,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				48AAC4832BDA827C007D10C5 /* Base */,
+				4898AC0D2BDFB77A00434F7C /* be-BY */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -451,6 +466,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -514,6 +530,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -589,6 +606,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.yanina.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -619,6 +640,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = org.yanina.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -11,10 +11,5 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let text = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
-            print("bundle version: \(text)")
-        }
     }
-
 }
